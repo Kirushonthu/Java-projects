@@ -7,19 +7,16 @@ public class ATM{
     Scanner ks=new Scanner(System.in);
     System.out.print("Enter your name:");
     String name =ks.nextLine();
-    
-    ks.useDelimiter("\\n");
     int pin=1234;
     int balance=10000;
-    
-    System.out.println("Enter your PIN No:");
-    
+	
+    System.out.print("Enter your PIN No:");
     int pin_no=ks.nextInt();
     if(pin_no==pin){
       System.out.println("login successful!!");
       int accNo = (int)(Math.random() * 900000) + 100000;
     System.out.println("Your Account No: " + accNo);
-      System.out.println("WELCOME  "+name+"🙂");
+      System.out.println("WELCOME  "+name);
       
       int select_opt;
       
@@ -28,15 +25,15 @@ public class ATM{
         //deposit 
         //withdraw 
         //exit 
-        System.out.println("ATM menu");
-        System.out.println("1.check balance");
-        System.out.println("2.deposit");
-        System.out.println("3.withdraw");
-        System.out.println("4.exit");
         
-        System.out.println("select your option:!!");
         do{
-        select_opt=ks.nextInt();
+			System.out.println("ATM menu");
+			System.out.println("1.check balance");
+			System.out.println("2.deposit");
+			System.out.println("3.withdraw");
+			System.out.println("4.exit");
+			System.out.println("select your option:!!");
+			select_opt=ks.nextInt();
       
       
       switch (select_opt){
