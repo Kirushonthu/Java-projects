@@ -102,7 +102,7 @@ public class StudentManagementSystem {
 
         for(int i = 0; i < count; i++){
             if(ids[i] == deleteId){
-                // Shift remaining data left
+                
                 for(int j = i; j < count - 1; j++){
                     ids[j] = ids[j + 1];
                     names[j] = names[j + 1];
